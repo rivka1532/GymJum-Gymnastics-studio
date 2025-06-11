@@ -9,7 +9,7 @@ export const routes: Routes = [
     { path: '', component: SignInComponent },
     { path: 'lessons-list', component: LessonsListComponent },
     { path: 'registration', component: RegistrationComponent, canActivate: [authGuard] },
-    { path: 'lesson-details', component: LessonDetailsComponent},
+    // { path: 'lesson-details', component: LessonDetailsComponent},
 ];
 
 

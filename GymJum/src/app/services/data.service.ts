@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Lesson } from './models/lesson.model';
-import { Registration } from './models/registration.model';
+import { Lesson } from '../models/lesson.model';
+import { Registration } from '../models/registration.model';
 
 @Injectable({
   providedIn: 'root' // השירות זמין לכל האפליקציה

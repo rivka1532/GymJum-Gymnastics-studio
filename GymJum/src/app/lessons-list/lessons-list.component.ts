@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { LessonDetailsComponent } from "../lesson-details/lesson-details.component";
 import { Lesson } from '../models/lesson.model';
-import { DataService } from '../data.service';
+import { DataService } from '../services/data.service';
 import { Subscription } from 'rxjs';
 
 @Component({

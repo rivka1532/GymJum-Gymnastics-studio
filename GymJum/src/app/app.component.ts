@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { RouterLink } from '@angular/router';
-import { AuthService } from './AuthService';
+import { AuthService } from './services/AuthService';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar'; // עבור סרגל הניווט (toolbar)
 import { MatButtonModule } from '@angular/material/button'; // עבור כפתורים

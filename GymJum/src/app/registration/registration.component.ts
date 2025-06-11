@@ -10,7 +10,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 import { AgGridAngular } from 'ag-grid-angular'; // Angular Data Grid Component
 import { DetailsDialogComponent } from '../details-dialog/details-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { DataService } from '../data.service';
+import { DataService } from '../services/data.service';
 import { Registration } from '../models/registration.model';
 import { Subscription } from 'rxjs/internal/Subscription';
 

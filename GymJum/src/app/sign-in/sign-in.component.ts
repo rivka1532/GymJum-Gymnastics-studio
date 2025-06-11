@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../AuthService';
+import { AuthService } from '../services/AuthService';
 import { CookieService } from 'ngx-cookie-service';
 import { MatCard } from '@angular/material/card';
 import { MatCardTitle } from '@angular/material/card';
