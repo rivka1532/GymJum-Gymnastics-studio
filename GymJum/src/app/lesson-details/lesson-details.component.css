@@ -1,0 +1,45 @@
+.lesson-details {
+  background-color: #ffffff;
+  border-radius: 16px; /* קצוות מעוגלים */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl; /* כיוון לימין */
+  text-align: right; /* יישור לימין */
+}
+
+.lesson-details.highlight {
+  background-color: #e3f2fd; /* רקע כחול בהיר להדגשה */
+  border: 2px solid #42a5f5; /* קו כחול להדגשה */
+  box-shadow: 0 8px 25px rgba(66, 165, 245, 0.3);
+}
+
+.lesson-details:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.lesson-details h3 {
+  margin-top: 0;
+  color: #1e88e5;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; /* מרכז את הכותרת */
+  font-weight: bold;
+}
+
+.lesson-details p {
+  margin: 6px 0;
+  color: #333333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  direction: rtl; /* קובע שכל הפסקאות יהיו RTL */
+}
+
+.lesson-details p i {
+  color: #4fc3f7;
+  margin-left: 8px;
+}

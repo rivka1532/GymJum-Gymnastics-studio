@@ -1,0 +1,35 @@
+/* כותרת ראשית */
+h2 {
+  text-align: center;
+  color: #1e88e5; /* כחול תכלת */
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(30, 136, 229, 0.3);
+}
+
+/* קונטיינר הגלריה - רקע לבן, צל וקצוות מעוגלים */
+.gallery {
+  /* background: #ffffff; רקע לבן אחיד לכל הקונטיינר */
+  border-radius: 20px;
+  /* box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12); */
+  padding: 30px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+/* .gallery:hover { 
+  transform: scale(1.01);
+}
+
+/* מבטל עיצוב רקע, צל וריווח מ-app-lesson-details כי הכל על הגלריה */
+app-lesson-details {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  transition: none !important;
+}

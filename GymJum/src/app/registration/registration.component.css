@@ -1,0 +1,101 @@
+/* כותרת ראשית */
+h1 {
+  text-align: center;
+  color: #1e88e5; /* כחול תכלת */
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(30, 136, 229, 0.3);
+}
+
+/* קונטיינר הטבלה */
+div[style] {
+  margin: 0 auto; /* מרכז את הגריד */
+  max-width: 95%; /* רוחב מקסימלי */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95); /* רקע לבן עדין */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* div[style]:hover {
+  transform: scale(1.01);
+} */
+
+/* עיצוב לגריד עצמו */
+.ag-theme-alpine {
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.ag-theme-alpine .ag-header {
+  background-color: #e3f2fd; /* כחול בהיר לכותרת הטבלה */
+  color: #1e88e5;
+  font-weight: bold;
+}
+
+.ag-theme-alpine .ag-row {
+  background-color: #ffffff;
+}
+
+.ag-theme-alpine .ag-row:nth-child(even) {
+  background-color: #f1f8ff; /* שורות זוגיות עם רקע בהיר */
+}
+
+.ag-theme-alpine .ag-row-hover {
+  background-color: #bbdefb !important; /* רקע כחול בהיר בשורה מרחפת */
+}
+
+.ag-theme-alpine .ag-cell {
+  padding: 10px;
+}
+
+/* אפקטים מודרניים */
+.ag-theme-alpine .ag-root {
+  box-shadow: none; /* אפשר להוריד צל פנימי אם רוצים */
+}
+
+body {
+  background: #f3f9fd url('https://www.transparenttextures.com/patterns/cubes.png'); /* רקע עם טקסטורה */
+  background-size: cover;
+}
+
+/* קונטיינר הגריד */
+div[style] {
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 700px; */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow-x: auto;
+}
+
+
+/* עיצוב לתוך ה-grid */
+.ag-theme-alpine {
+  width: 100%; /* התאמה מלאה לקונטיינר */
+  box-sizing: border-box; /* חישוב padding לתוך הרוחב */
+}
+
+.ag-theme-alpine .ag-header,
+.ag-theme-alpine .ag-row {
+  white-space: normal; /* מאפשר שורות ארוכות להתפרק */
+  word-wrap: break-word;
+}
+
+
+.ag-theme-alpine .ag-cell {
+  min-width: 100px; /* רוחב מינימלי */
+  max-width: 200px; /* אפשר גם להגדיר גבול עליון */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

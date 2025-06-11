@@ -1,0 +1,84 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e88e5, #d4f1fd); /* תכלת בהיר */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl; /* יישור לימין */
+}
+
+.signin-card {
+  background-color: #ffffff;
+  padding: 35px 30px; /* יותר מרווח */
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 340px; /* גדול יותר */
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.signin-card h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 26px; /* גדול יותר */
+}
+
+.input-group {
+  margin-bottom: 16px;
+  text-align: right; /* יישור לימין */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+  font-size: 15px; /* גדול יותר */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 14px; /* יותר padding */
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 15px; /* יותר גדול */
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px; /* גדול יותר */
+  background-color: #1e88e5; /* תכלת בהיר */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* גדול יותר */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4fc3f7; /* כחול תכלת בהיר */
+}
+
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px; /* גדול יותר */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

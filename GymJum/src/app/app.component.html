@@ -1,0 +1,13 @@
+<!-- <nav *ngIf="shouldShowNav()"> -->
+<nav>
+  <div class="links">
+    <a routerLink="/lessons-list">שיעורים</a>
+    <a *ngIf="authService.isAuthorized('registration')" routerLink="/registration">נרשמות</a>
+  </div>
+  <div class="buttons">
+    <button *ngIf="authService.getUserRole()" (click)="signOut()">Sign out</button>
+    <button *ngIf="!authService.getUserRole() && !isHome()" (click)="signIn()">Sign in</button>
+  </div>
+
+</nav>
+<router-outlet></router-outlet>

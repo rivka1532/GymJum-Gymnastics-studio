@@ -1,0 +1,26 @@
+<div class="signin-container">
+  <div class="signin-card">
+    <h2>התחברות</h2>
+    <form [formGroup]="signinForm" (ngSubmit)="signin()">
+      <div class="input-group">
+        <label for="username">שם משתמש</label>
+        <input id="username" type="text" formControlName="username" />
+        <div class="error-message" *ngIf="signinForm.get('username')?.touched && signinForm.get('username')?.invalid">
+          שם משתמש נדרש
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">סיסמה</label>
+        <input id="password" type="password" formControlName="password" />
+        <div class="error-message" *ngIf="signinForm.get('password')?.touched && signinForm.get('password')?.invalid">
+          סיסמה נדרשת
+        </div>
+      </div>
+
+      <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+      <button type="submit" [disabled]="signinForm.invalid">התחבר</button>
+    </form>
+  </div>
+</div>

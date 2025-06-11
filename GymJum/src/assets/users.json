@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dana Levi",
+    "role": "gym teacher",
+    "password": "dana123"
+  },
+  {
+    "name": "Leah Cohen",
+    "role": "registration secretary",
+    "password": "leah456"
+  },
+  {
+    "name": "Yossi Azulay",
+    "role": "gym teacher",
+    "password": "yossi789"
+  },
+  {
+    "name": "Rivka Stern",
+    "role": "registration secretary",
+    "password": "rivka321"
+  }
+]

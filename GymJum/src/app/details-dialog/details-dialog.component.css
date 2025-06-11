@@ -1,0 +1,42 @@
+/* כותרת הדיאלוג */
+h2[mat-dialog-title] {
+  text-align: center;
+  color: #1e88e5; /* כחול תכלת */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(30, 136, 229, 0.3);
+}
+
+/* תוכן הדיאלוג */
+.details-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl; /* כיוון טקסט מימין לשמאל */
+  text-align: right; /* יישור טקסט לימין */
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  padding: 0 10px 20px 10px;
+}
+
+.details-content p {
+  margin: 8px 0;
+}
+
+.details-content strong {
+  /* color: #1e88e5; הדגשה בצבע תכלת */
+}
+
+/* כפתור הסגירה */
+mat-dialog-actions {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: flex-start; /* הכפתור משמאל */
+}
+
+mat-dialog-actions button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}

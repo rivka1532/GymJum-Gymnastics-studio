@@ -1,0 +1,15 @@
+<!-- <button (click)="countUnpaidPastLectures()">שולם</button> -->
+ <h1>נרשמות</h1>
+ <div [style.width.px]="gridWidth">
+  <ag-grid-angular 
+        [rowData]="registrations    "
+        [columnDefs]="colDefs"
+        [gridOptions]="gridOptions" 
+        [pagination]="true"
+        [paginationPageSizeSelector]="[10,20,50]"
+        [paginationPageSize]="10"
+        domLayout="autoHeight"
+        style="width: auto;"
+        (gridReady)="onGridReady($event)"/>
+</div>
+

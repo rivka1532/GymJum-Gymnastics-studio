@@ -1,0 +1,9 @@
+<div [ngClass]="{ 'highlight': hasStarted }" class="lesson-details">
+  <h3>{{ lesson.title }}</h3>
+  <p><i class="fas fa-user-tie"></i> <strong>מורה:&nbsp;</strong> {{ lesson.teacher }}</p>
+  <p><i class="fas fa-list"></i> <strong>מפגשים:&nbsp;</strong> {{ lesson.sessions }}</p>
+  <p><i class="fas fa-calendar-alt"></i> <strong>תאריך:&nbsp;</strong> {{ lesson.startDate }}</p>
+  <p><i class="fas fa-shekel-sign"></i> <strong>מחיר:&nbsp;</strong> ₪{{ lesson.price }}</p>
+  <p><i class="fas fa-calendar-day"></i> <strong>יום:&nbsp;</strong> {{ lesson.day }}</p>
+  <p><i class="fas fa-clock"></i> <strong>שעה:&nbsp;</strong> {{ lesson.time }}</p>
+</div>
